@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# 環境変数・秘密情報
+.env
+.env.*
+
+# marimo / Jupyter の一時ファイル
+.marimo/
+.ipynb_checkpoints/
+
+# 分析データは原則として Git 管理しない
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# ローカル出力
+outputs/
+reports/
+*.log

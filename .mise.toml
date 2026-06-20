@@ -1,0 +1,9 @@
+[tools]
+python = "3.12"
+
+[env]
+PYTHONUTF8 = "1"
+
+[tasks.compile]
+description = "lib、scratch、notebooks 配下の Python 構文確認"
+run = "python -m compileall lib scratch notebooks"
